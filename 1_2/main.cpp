@@ -25,8 +25,7 @@ std::vector<int> ZFunction(const std::string& s) {
 int main() {
     std::string substring, string;
     std::cin >> substring >> string;
-    std::string new_s = substring + "#" + string;
-    std::vector<int> z = ZFunction(new_s);
+    std::vector<int> z = ZFunction(substring + "#" + string);
     int n = substring.size();
     for (int i = n; i < z.size(); ++i) {
         if (z[i] == n) {
